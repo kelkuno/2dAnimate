@@ -1,0 +1,23 @@
+{
+  "name": "2danimate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelkuno/2dAnimate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelkuno/2dAnimate/issues"
+  },
+  "homepage": "https://github.com/kelkuno/2dAnimate#readme",
+  "dependencies": {
+    "canvas-sketch": "^0.7.7"
+  }
+}
