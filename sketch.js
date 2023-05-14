@@ -21,10 +21,12 @@ const sketch = () => {
       for (let y = 0; y < count; y++) {
         const u = count <= 1 ? .05 : x / (count - 1);
         const v = count <= 1 ? .05 : y / (count - 1);
+        const radius = Math.abs(random.noise2D(u,v)) * .05;
         points.push({
           color: random.pick(palette),
           position: [u, v],
-          radius: Math.abs(random.gaussian() * .01)
+          radius
+          // radius: Math.abs(random.gaussian() * .01)
         });
       }
     }
@@ -39,7 +41,7 @@ const sketch = () => {
   // const points = createGrid().filter(()=>Math.random()>0.5);
 
   ///////////////////math.random has limitations, here's the same using the random util, which is more refined
-  random.setSeed(512);
+  // random.setSeed(512);
   const points = createGrid().filter(() => random.value() > 0.5);
 
 
